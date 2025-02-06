@@ -1,0 +1,58 @@
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+TempPE/
+
+# NuGet Packages
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+PlayLists/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Backup & temp files
+*~
+*.bak
+*.swp
+*.tmp
+
+# Project-specific
+Required dlls/
+RequiredServerDlls/
+ConversionFiles/
+
+# IDE-specific
+.idea/
+*.csproj.user
+*.pubxml.user
+launchSettings.json
