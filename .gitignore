@@ -61,3 +61,7 @@ ConversionFiles/
 *.csproj.user
 *.pubxml.user
 launchSettings.json
+
+# CDT
+CDT.dll
+/xCDTWrapper/
