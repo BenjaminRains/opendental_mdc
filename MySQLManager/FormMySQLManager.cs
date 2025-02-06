@@ -36,13 +36,13 @@ namespace MySQLManager {
 		}
 
 		private bool ConnectToDatabase(string userName,string password) {
-			int portNum=3306;//This is the default port for MySQL.
+			int portNum=3307;//Changed from 3306 for MariaDB instance
 			if(textPort.Text!="" && !Int32.TryParse(textPort.Text,out portNum)) {
 				MessageBox.Show("Please enter a valid number for the Port.");
 				return false;
 			}
 			string server=textServer.Text;
-			if(portNum!=3306) {
+			if(portNum!=3307) {//Updated default port check
 				server+=":"+portNum;
 			}
 			try {
