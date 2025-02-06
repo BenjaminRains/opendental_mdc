@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
 using CodeBase;
+using OpenDental.CDT;
 
 namespace DataConnectionBase {
 	///<summary>Used to retrieve connections from a configuration file. If you have access to OpenDentBusiness, you should call methods in OpenDentBusiness.ConeectionStore because that class contains additional logic relevant to OpenDentBusiness.</summary>
@@ -386,6 +387,10 @@ namespace DataConnectionBase {
 					return dbType;
 				}
 			}
+		}
+
+		public enum CDT {
+			// Add your enum values here
 		}
 	}
 }
