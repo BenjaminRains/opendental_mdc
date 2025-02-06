@@ -6,6 +6,11 @@
 *.suo
 *.cache
 
+# Configuration files with sensitive data
+MySQLManager/App.config
+# Don't ignore other App.config files
+!*/App.config
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
