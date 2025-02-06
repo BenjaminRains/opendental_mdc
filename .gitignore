@@ -8,7 +8,8 @@
 
 # Configuration files with sensitive data
 MySQLManager/App.config
-# Don't ignore other App.config files
+# Don't ignore template and other App.config files
+!MySQLManager/App.config.template
 !*/App.config
 
 # Build results
