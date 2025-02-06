@@ -10,7 +10,6 @@
 MySQLManager/App.config
 # Don't ignore template and other App.config files
 !MySQLManager/App.config.template
-!*/App.config
 
 # Build results
 [Dd]ebug/
