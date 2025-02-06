@@ -580,10 +580,6 @@
     <Compile Include="MiddleTier\WebServiceT.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OpenDentalHelp\OpenDentalHelp\OpenDentalHelp.csproj">
-      <Project>{98b2999c-8a9f-4795-b452-7f6231ed56b4}</Project>
-      <Name>OpenDentalHelp</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CentralManager\xCentralManager.csproj">
       <Project>{10BFA78E-E5FE-4209-8347-AD0EC8B3F064}</Project>
       <Name>xCentralManager</Name>

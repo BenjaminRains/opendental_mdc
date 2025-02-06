@@ -11085,30 +11085,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Bridges\xBridges.csproj">
-      <Project>{a4d55048-b426-4bc6-bbd5-56f1e4bcc28d}</Project>
-      <Name>xBridges</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CDT\xCDT.csproj">
-      <Project>{76ba82e6-d8e1-45b1-8ed6-41d97b8d67ec}</Project>
-      <Name>xCDT</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\ImagingDeviceManager\xImagingDeviceManager.csproj">
-      <Project>{783079e6-a13f-4f43-a28d-9d7731f945d1}</Project>
-      <Name>xImagingDeviceManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\ODApi\xODApi.csproj">
-      <Project>{05c5f52c-f5d7-4eb6-a37d-88e8a8f9db9c}</Project>
-      <Name>xODApi</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\OpenDentalHelp\OpenDentalHelp\OpenDentalHelp.csproj">
-      <Project>{98b2999c-8a9f-4795-b452-7f6231ed56b4}</Project>
-      <Name>OpenDentalHelp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Unversioned\VirtualWeb\VirtualWeb.csproj">
-      <Project>{4ed3df2f-e97e-4bc3-ae5f-aa31a11af57f}</Project>
-      <Name>VirtualWeb</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CodeBase\xCodeBase.csproj">
       <Project>{18F7BC78-4B99-48D3-A1F1-0D13A63E3CF9}</Project>
       <Name>xCodeBase</Name>
