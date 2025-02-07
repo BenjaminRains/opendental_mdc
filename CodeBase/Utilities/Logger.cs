@@ -607,7 +607,7 @@ namespace CodeBase {
 						clinicStr="HQ";
 					}
 				}
-				catch(Exception e) {
+				catch(Exception) { // Removed the unused variable 'e'
 					//Invoker is not in a state to figure out if clinics are enabled yet, log in base directory.
 				}
 			}

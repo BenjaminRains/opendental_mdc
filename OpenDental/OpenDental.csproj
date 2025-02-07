@@ -25,6 +25,8 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>http://localhost/OpenDental/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -39,8 +41,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,7 +79,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;THINFINITY</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
@@ -114,6 +114,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\AxInterop.WMPLib.dll</HintPath>
     </Reference>
+    <Reference Include="Bridges">
+      <HintPath>..\Required dlls\Bridges.dll</HintPath>
+    </Reference>
+    <Reference Include="CDT">
+      <HintPath>..\Required dlls\CDT.dll</HintPath>
+    </Reference>
     <Reference Include="Dicom.Core, Version=4.0.7.0, Culture=neutral, PublicKeyToken=3a13f649e28eb09a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\Dicom.Core.dll</HintPath>
@@ -128,6 +134,9 @@
     </Reference>
     <Reference Include="Health.Direct.Common">
       <HintPath>..\Required dlls\Health.Direct.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ImagingDeviceManager">
+      <HintPath>..\Required dlls\ImagingDeviceManager.dll</HintPath>
     </Reference>
     <Reference Include="Interop.Acrobat, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -245,9 +254,15 @@
     <Reference Include="NHunspell">
       <HintPath>..\Required dlls\NHunspell.dll</HintPath>
     </Reference>
+    <Reference Include="ODApi">
+      <HintPath>..\Required dlls\ODApi.dll</HintPath>
+    </Reference>
     <Reference Include="ODCrypt, Version=18.3.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\ODCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenDentalHelp">
+      <HintPath>..\Required dlls\OpenDentalHelp.dll</HintPath>
     </Reference>
     <Reference Include="Org.Mentalis.Security, Version=1.0.13.715, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
@@ -374,6 +389,9 @@
     <Reference Include="VBbridges, Version=4.4.11.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\VBbridges.dll</HintPath>
+    </Reference>
+    <Reference Include="VirtualWeb">
+      <HintPath>..\Required dlls\VirtualWeb.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />

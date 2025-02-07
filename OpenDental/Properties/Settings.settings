@@ -17,5 +17,8 @@
     <Setting Name="OpenDental_EmdeonITS_ITSWS" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://its.changehealthcare.com/ITS/ITSWS.asmx</Value>
     </Setting>
+    <Setting Name="OpenDental_NewCrop_Update1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://secure.newcropaccounts.com/v7/WebServices/Update1.asmx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

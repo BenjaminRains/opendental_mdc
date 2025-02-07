@@ -27,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,6 +46,9 @@
     <Reference Include="Bridges, Version=24.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\Bridges.dll</HintPath>
+    </Reference>
+    <Reference Include="CDT">
+      <HintPath>..\Required dlls\CDT.dll</HintPath>
     </Reference>
     <Reference Include="DpsPos">
       <HintPath>..\Required dlls\DpsPos.dll</HintPath>
@@ -80,6 +84,9 @@
     <Reference Include="NHunspell">
       <HintPath>..\Required dlls\NHunspell.dll</HintPath>
     </Reference>
+    <Reference Include="OpenDentalHelp">
+      <HintPath>..\Required dlls\OpenDentalHelp.dll</HintPath>
+    </Reference>
     <Reference Include="PdfSharp, Version=1.2.1269.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\PdfSharp.dll</HintPath>
@@ -110,6 +117,9 @@
     <Reference Include="VBbridges, Version=22.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\VBbridges.dll</HintPath>
+    </Reference>
+    <Reference Include="VirtualWeb">
+      <HintPath>..\Required dlls\VirtualWeb.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />

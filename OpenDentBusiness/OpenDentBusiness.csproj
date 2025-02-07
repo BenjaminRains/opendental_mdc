@@ -119,6 +119,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\Bridges.dll</HintPath>
     </Reference>
+    <Reference Include="CDT">
+      <HintPath>..\Required dlls\CDT.dll</HintPath>
+    </Reference>
     <Reference Include="Dicom.Core, Version=4.0.7.0, Culture=neutral, PublicKeyToken=3a13f649e28eb09a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Required dlls\Dicom.Core.dll</HintPath>

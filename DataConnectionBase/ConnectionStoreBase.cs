@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
 using CodeBase;
-using OpenDental.CDT;
+using xCDTWrapper;
 
 namespace DataConnectionBase {
 	///<summary>Used to retrieve connections from a configuration file. If you have access to OpenDentBusiness, you should call methods in OpenDentBusiness.ConeectionStore because that class contains additional logic relevant to OpenDentBusiness.</summary>
@@ -156,7 +156,7 @@ namespace DataConnectionBase {
 		private static Dictionary<ConnectionNames,CentralConnectionBase> InitConnectionStoreXml(string fullPath) {
 			return InitConnectionsFromXmlFile<ListCentralConnections,CentralConnectionBase>(fullPath,new Func<CentralConnectionBase,CentralConnectionBase>((conn) => {
 				if(!string.IsNullOrEmpty(conn.MySqlPassword)) {
-					if(!CDT.Class1.Decrypt(conn.MySqlPassword,out conn.MySqlPassword)) {
+					if(!xCDTWrapper.Class1.Decrypt(conn.MySqlPassword,out conn.MySqlPassword)) {
 						throw new Exception("Unable to decrypt MySQL password: "+fullPath);
 					}
 				}
@@ -168,7 +168,7 @@ namespace DataConnectionBase {
 		private static Dictionary<ConnectionNames,CentralConnectionBase> InitOpenDentalWebConfigXml(string fullPath) {
 			return InitConnectionsFromXmlFile<ConnectionSettings,DatabaseConnection>(fullPath,new Func<DatabaseConnection,CentralConnectionBase>((conn) => {
 				if(!string.IsNullOrEmpty(conn.Password)) {
-					if(!CDT.Class1.Decrypt(conn.Password,out conn.Password)) {
+					if(!xCDTWrapper.Class1.Decrypt(conn.Password,out conn.Password)) {
 						throw new Exception("Unable to decrypt MySQL password: "+fullPath);
 					}
 				}

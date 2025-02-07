@@ -42,8 +42,9 @@ namespace OpenDentBusiness.Crud{
 			return list;
 		}
 
-		///<summary>Converts a DataTable to a list of objects.</summary>
-		public static List<Adjustment> TableToList(DataTable table) {
+        ///<summary>Converts a DataTable to a list of objects.</summary>
+        [Obsolete]
+        public static List<Adjustment> TableToList(DataTable table) {
 			List<Adjustment> retVal=new List<Adjustment>();
 			Adjustment adjustment;
 			foreach(DataRow row in table.Rows) {
@@ -343,10 +344,11 @@ namespace OpenDentBusiness.Crud{
 			}
 			//SecUserNumEntry excluded from update
 			//SecDateTEdit can only be set by MySQL
-			if(adjustment.TaxTransID != oldAdjustment.TaxTransID) {
-				if(command!="") { command+=",";}
-				command+="TaxTransID = "+POut.Long(adjustment.TaxTransID)+"";
-			}
+			// Removed the obsolete TaxTransID check and assignment
+			// if(adjustment.TaxTransID != oldAdjustment.TaxTransID) {
+			//	   if(command!="") { command+=",";}
+			//	   command+="TaxTransID = "+POut.Long(adjustment.TaxTransID)+"";
+			// }
 			if(command=="") {
 				return false;
 			}

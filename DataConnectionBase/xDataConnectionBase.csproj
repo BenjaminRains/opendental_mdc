@@ -131,6 +131,10 @@
       <Project>{18f7bc78-4b99-48d3-a1f1-0d13a63e3cf9}</Project>
       <Name>xCodeBase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\xCDTWrapper\xCDTWrapper.csproj">
+      <Project>{f3c3da0b-8883-4da6-bb76-eb54b5b3d64d}</Project>
+      <Name>xCDTWrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
